@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:foreground="?attr/selectableItemBackground"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="4dp">
+
+    <LinearLayout
+        android:padding="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textSurahName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_light"
+            android:text="1. Al-Fatihah"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:fontFamily="@font/poppins_medium"
+            android:textColor="#569834"
+            android:textSize="24sp"
+            android:paddingVertical="8dp"
+            android:layout_gravity="end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1. Al-Fatihah"
+            android:id="@+id/textArabic"/>
+
+
+        <TextView
+            android:textSize="12sp"
+            android:gravity="end"
+            android:fontFamily="@font/poppins"
+            android:layout_gravity="end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pembukaan"
+            android:id="@+id/textIndonesian"/>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

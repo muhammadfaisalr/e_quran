@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="16dp"
+    app:cardCornerRadius="0dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="4dp"
+            android:layout_height="match_parent"
+            android:background="@color/purple_500"/>
+
+        <LinearLayout
+            android:padding="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textAyahNumber"
+                    android:layout_width="0dp"
+                    android:layout_weight="1.4"
+                    android:layout_height="wrap_content"
+                    android:text="12:1"
+                    android:fontFamily="@font/poppins_light"/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.6"
+                    android:text="Hapus"
+                    style="@style/Widget.MaterialComponents.Button.TextButton"
+                    android:textColor="#EF5350"
+                    android:id="@+id/buttonDelete" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_marginTop="8dp"
+                android:id="@+id/textArabic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="12:1"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:layout_gravity="end"
+                android:fontFamily="@font/poppins_medium"/>
+
+            <TextView
+                android:layout_marginTop="8dp"
+                android:id="@+id/textLatin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="12:1"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/poppins"/>
+
+            <TextView
+                android:layout_marginTop="8dp"
+                android:id="@+id/textIndonesian"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="12:1"
+                android:textSize="14sp"
+                android:fontFamily="@font/poppins"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

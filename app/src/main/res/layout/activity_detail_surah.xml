@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.DetailSurahActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp">
+
+       <LinearLayout
+           android:padding="12dp"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="vertical">
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:id="@+id/textSurahName"
+               android:textSize="18sp"
+               android:text="Mengambil Data"
+               android:fontFamily="@font/poppins_medium"
+               android:textColor="@color/black"/>
+
+           <TextView
+               android:layout_marginTop="4dp"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:id="@+id/textShortDesc"
+               android:textSize="14sp"
+               android:text="Sedang Mengambil Data..."
+               android:fontFamily="@font/poppins_light"
+               android:textColor="@color/black"/>
+
+           <LinearLayout
+               android:gravity="end"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal">
+
+               <com.google.android.material.button.MaterialButton
+                   android:layout_margin="4dp"
+                   android:id="@+id/buttonTafsir"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="@string/see_tafsir"
+                   android:textSize="12sp"
+                   app:backgroundTint="@color/greenPrimary"
+                   android:drawableLeft="@drawable/ic_round_assignment_24"
+                   android:drawableTint="@color/white"
+                   android:drawablePadding="8dp"/>
+
+               <com.google.android.material.button.MaterialButton
+                   android:layout_margin="4dp"
+                   android:id="@+id/buttonPlay"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="@string/play_audio"
+                   android:textSize="12sp"
+                   app:backgroundTint="@color/bluePrimary"
+                   android:drawableLeft="@drawable/ic_round_play_arrow_24"
+                   android:drawableTint="@color/white"
+                   android:drawablePadding="8dp"/>
+
+           </LinearLayout>
+
+       </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/recyclerView"/>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/recyclerTafsir"/>
+
+</LinearLayout>
